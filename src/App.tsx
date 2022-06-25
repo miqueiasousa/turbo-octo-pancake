@@ -1,9 +1,7 @@
+import Router from './Router'
+
 function App() {
-  return (
-    <div className="flex w-full h-screen justify-center items-center">
-      <h1 className="font-bold text-9xl">Hello world</h1>
-    </div>
-  )
+  return <Router />
 }
 
 export default App
