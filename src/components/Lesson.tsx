@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { CheckCircle, Lock } from 'phosphor-react'
 import { isPast } from 'date-fns'
 
@@ -17,7 +18,7 @@ export default function Lesson({
   type
 }: LessonProps) {
   return (
-    <a href="" className="group">
+    <Link to={`/event/lesson/${slug}`} className="group">
       <span className="text-gray-300">
         {formatLessonAvailbleAt(availableAt)}
       </span>
@@ -40,6 +41,6 @@ export default function Lesson({
         </header>
         <strong className="text-gray-100 mt-5 block">{title}</strong>
       </div>
-    </a>
+    </Link>
   )
 }
