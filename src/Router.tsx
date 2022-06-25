@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+
 import Event from './pages/Event'
 
 export default function Router() {
@@ -6,6 +7,7 @@ export default function Router() {
     <Routes>
       <Route path="/" element={<h1>imagine that's a home component</h1>} />
       <Route path="/event" element={<Event />} />
+      <Route path="/event/lesson/:slug" element={<Event />} />
     </Routes>
   )
 }
